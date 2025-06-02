@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 25% 95%;
+    --foreground: 30 10% 15%;
+
+    --card: 36 25% 98%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 36 25% 98%;
+    --popover-foreground: 30 10% 15%;
+
+    --primary: 36 40% 40%;
+    --primary-foreground: 36 25% 98%;
+
+    --secondary: 30 15% 85%;
+    --secondary-foreground: 30 10% 15%;
+
+    --muted: 30 15% 90%;
+    --muted-foreground: 30 10% 40%;
+
+    --accent: 43 50% 57%;
+    --accent-foreground: 30 10% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 36 25% 98%;
+
+    --border: 30 15% 80%;
+    --input: 30 15% 80%;
+    --ring: 36 40% 40%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-destiny-gold hover:bg-destiny-brown text-white px-6 py-3 rounded-sm transition-all duration-300 font-sans font-medium;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-serif font-medium mb-4 text-destiny-darkBrown;
+  }
+  
+  .section-subtitle {
+    @apply text-xl md:text-2xl font-serif text-destiny-brown mb-8;
+  }
+}
